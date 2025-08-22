@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #fafafa;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 15px;
+    background-color: #f2f2f2;
+    align-items: center;
+    color: #fafafa;
+    position: sticky;
+    top: 0;
+    z-index: 2000000;
+
+}
+.imglo img{
+    width: 123px;
+    height: 40px;
+}
+.sizes{
+    display: flex;
+    margin: auto;
+    gap: 10px;
+}
+.page-head{
+    display: grid;
+    grid-template-rows: 80px 200px;
+    grid-template-columns: 10% 1fr 10%;
+    grid-area: "nav nav nav"
+    "blog blog blog";
+}
+.nav{
+    grid-area: nav;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(248, 251, 251);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navigation nav{
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+.navigation nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+.img-nav img{
+    width: 60px;
+    height: 30px;
+}
+.BLOG{
+    grid-area: blog;
+    grid-column: 1/6;
+    grid-row: 2/3;
+    display: grid;
+    place-items: center;
+    background-color: #f0f3fe;
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(4,350px) 50px;
+    grid-template-columns: 10% 1fr 10%;
+    row-gap: 30px;
+    margin-top: 20px;
+}
+.item1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+}
+.item1-img{
+    width: 50%;
+    height: 95%;
+    background-color: black;
+}
+.item1-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.item1-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding:20px ;
+    font-size: x-large;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+p{
+    font-size: 22px;
+}
+span{
+    font-size: 20px;
+    color: rgb(121, 121, 121);
+}
+.item1-text a{
+    font-size: 20px;
+    color: rgb(64, 64, 195);
+}
+.item2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+}
+.item3{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: flex;
+}
+.Contact{
+    grid-row: 4/5;
+    grid-column: 1/4;
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f3fe;
+    margin-top: -30px;
+    margin-bottom: -30px;
+   
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.icon{
+    display: flex;
+    gap: 15px;
+    color: #7190f0;
+    font-size: x-large;
+}
+i {
+    cursor: pointer;
+}
+.address h1{
+    font-size: 50px;
+    color: #7190f0;
+}
+.contact-gmail{
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+    color: #7190f0;
+}
+.contact-gmail a{
+    font-size: larger;
+    color: #7190f0;
+    text-decoration: none;
+}
+footer{
+    grid-row: 5/6;
+    grid-column: 1/4;
+    display: flex;
+    background-color: rgb(30, 30, 30);
+}
